@@ -9,7 +9,7 @@ import requests
 import subprocess
 
 # --- Environment toggle ---
-use_test_api = False # Set to True to use the test API
+use_test_api = True # Set to False to use the prod API
 API_ENDPOINT = (
     "https://test.metaname.net/api/1.1"
     if use_test_api
