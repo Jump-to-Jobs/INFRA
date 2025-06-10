@@ -27,7 +27,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GH_PAT }}
+          personal_token: ${{ secrets.GH_PAT }}
           publish_dir: ./getjjobs-landing/dist
           publish_branch: gh-pages
           # nuke and pave each deploy
