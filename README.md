@@ -13,10 +13,13 @@ Quick start:
 cd octodns
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-source env/metaname-test.env
-make plan-test            # dry-run
-make apply-test           # push changes to the Metaname test API
+source env/metaname-prod.env
+make plan-prod            # dry-run
+make apply-prod           # push changes to the Metaname test API
 ```
+
+This assumes you are using 1Password and have access to the vault where the
+Metaname API credentials are stored.
 
 The zone file lives in `octodns/zones/getjjobs.nz.yaml`. Update it like you
 would any other OctoDNS project, open a PR, and run the plan/apply commands
