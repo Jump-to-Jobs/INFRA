@@ -1,0 +1,17 @@
+---
+providers:
+  zones:
+    class: octodns.provider.yaml.YamlProvider
+    directory: zones
+    enforce_order: false
+
+  metaname-test:
+    class: octodns_metaname.MetanameProvider
+    base_url: https://test.metaname.net/api/1.1
+
+zones:
+  testjjobs.nz.:
+    sources:
+      - zones
+    targets:
+      - metaname-test
