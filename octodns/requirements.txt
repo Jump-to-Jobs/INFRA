@@ -1,0 +1,4 @@
+# Core OctoDNS tooling plus the OpsDev.nz helper/provider packages.
+octodns>=1.14.0
+op-opsdevnz>=0.1.4
+octodns-metaname>=0.1.1

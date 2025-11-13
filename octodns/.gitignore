@@ -1,0 +1,12 @@
+# Local env files hold secrets (or 1Password references).
+env/*.env
+
+# Virtual environments or artefacts created while running OctoDNS locally.
+.venv/
+venv/
+.python-version
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+dist/
+build/
