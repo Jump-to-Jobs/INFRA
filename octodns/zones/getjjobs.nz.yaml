@@ -1,0 +1,43 @@
+---
+'':
+  - ttl: 3600
+    type: A
+    values:
+      - 75.2.60.5
+      - 99.83.190.102
+  - ttl: 3600
+    type: MX
+    values:
+      - exchange: mx1.forwardemail.net.
+        preference: 10
+      - exchange: mx2.forwardemail.net.
+        preference: 10
+  - ttl: 3600
+    type: TXT
+    values:
+      - forward-email-site-verification=Zh8I4ySdmv
+      - "v=spf1 a include:spf.forwardemail.net include:_spf.google.com -all"
+'app':
+  - ttl: 3600
+    type: CNAME
+    value: cd00d1410879ea24.vercel-dns-017.com.
+'dev':
+  - ttl: 3600
+    type: CNAME
+    value: cname.vercel-dns.com.
+'fe-bounces':
+  - ttl: 3600
+    type: CNAME
+    value: forwardemail.net.
+'fe-e1a7480ff1._domainkey':
+  - ttl: 3600
+    type: TXT
+    value: "v=DKIM1\\; k=rsa\\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCpE8sJ9NqDxdZWoZMAyzNzBNvgFgrwQm+EBN/fKw6Pk5TUEhcirkK7VOtjkLcuKB2eawO8wCDFBsRvV/o4/e31r0zVKLlEUFizTsQrZy8F8fbsrM1Si0xnfVSbtnbUqH/bnZBcz5UxVFxQGn63a858bnH5LLfb+ZUpCxunFdnSQQIDAQAB\\;"
+'_dmarc':
+  - ttl: 3600
+    type: TXT
+    value: "v=DMARC1\\; p=reject\\; pct=100\\; rua=mailto:dmarc-6832438f6dff8fa7b72b9251@forwardemail.net\\;"
+'www':
+  - ttl: 3600
+    type: CNAME
+    value: getjjobs.netlify.app.
