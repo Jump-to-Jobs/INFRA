@@ -1,13 +1,152 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JJobs - Don't Write. Show.</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">JJobs</div>
+        <div class="nav-links">
+          <a href="#hero">Home</a>
+          <a href="aboutus.html">About us</a>
+          <a href="employer.html">For Employers</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Don't Write. <span class="highlight">Show.</span></h1>
+                    <p>40 seconds is all it takes to show who you are. Land your first job through short-form video resumes — no boring cover letters, no ghosting.</p>
+                    <div class="cta-group">
+                        <a href="https://app.getjjobs.nz/signin" class="btn-primary">
+                            🎥 Continue as Job Seeker
+                        </a>
+                        <a href="https://app.getjjobs.nz/business/signin" class="btn-secondary">
+                            🏢 Continue as Employer
+                        </a>
+                    </div>
+                    <p class="cta-note">Continue with Google – explore the app instantly.</p>
+                </div>
+                <div class="hero-visual">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="video-preview">
+                                <div class="play-icon"></div>
+                            </div>
+                            <div class="profile-info">
+                                <div class="profile-name">Woori</div>
+                                <div class="profile-role">UI designer</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="problem-solution" id="problem-solution">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>The Problem We Solve: Beyond the Resume</h2>
+                <p>Traditional hiring methods are outdated and fail to capture true potential. JJobs redefines how talent is discovered.</p>
+            </div>
+            <div class="problem-solution-grid">
+                <div class="problem-card animate-on-scroll">
+                    <span class="problem-icon">📄</span>
+                    <h3>The Resume Wall</h3>
+                    <p>Resumes are static. They tell *what* you've done, but not *who* you are. They hide personality, communication skills, and real passion.</p>
+                </div>
+                <div class="problem-card animate-on-scroll">
+                    <span class="problem-icon">👻</span>
+                    <h3>The Ghosting Game</h3>
+                    <p>Applying feels like sending applications into a black hole. No feedback, no connection, just endless waiting and often, ghosting.</p>
+                </div>
+                <div class="problem-card animate-on-scroll">
+                    <span class="problem-icon">⏱️</span>
+                    <h3>Time-Consuming & Biased</h3>
+                    <p>Recruiters spend seconds on resumes. Biases creep in. The process is inefficient for both job seekers and employers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="jjobs-solution" id="jjobs-solution">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>JJobs: The Human-First Hiring Solution</h2>
+                <p>We bridge the gap between talent and opportunity, making hiring intuitive, engaging, and genuinely human.</p>
+            </div>
+            <div class="solution-grid">
+                <div class="solution-card animate-on-scroll">
+                    <span class="solution-icon">🎥</span>
+                    <h3>CVideo: Your Story in Motion</h3>
+                    <p>Showcase your personality, communication style, and passion in a short video. It's more than a resume; it's *you*.</p>
+                </div>
+                <div class="solution-card animate-on-scroll">
+                    <span class="solution-icon">💬</span>
+                    <h3>Real Feedback, Real Growth</h3>
+                    <p>No more black holes. Get constructive feedback from recruiters, helping you learn and improve with every application.</p>
+                </div>
+                <div class="solution-card animate-on-scroll">
+                    <span class="solution-icon">⚡</span>
+                    <h3>Instant Connection, Faster Hires</h3>
+                    <p>Employers see the real you instantly. Cut down on endless interviews and find your perfect match in days, not weeks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Real Success Stories</h2>
+            </div>
+            <div class="testimonial-card animate-on-scroll">
+                <p class="testimonial-quote">"JJobs helped me express myself — I got my first interview in a week. Finally, a platform that gets Gen Z!"</p>
+                <p class="testimonial-author">— Woori, 21, first-time job seeker</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content animate-on-scroll">
+                <h2>Ready to Revolutionize Your Hiring?</h2>
+                <p>Join JJobs and discover talent beyond the paper.</p>
+                <a href="https://app.getjjobs.nz/business/signin" class="btn-primary">Explore for Employers</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 JJobs. Made for digital natives, creators, and visual thinkers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="sticky-cta-container" id="stickyCTAContainer">
+        <a href="https://app.getjjobs.nz/signin" class="sticky-cta-button" title="Continue as Job Seeker">
+            <i class="fas fa-user-graduate"></i>
+        </a>
+        <a href="https://app.getjjobs.nz/business/signin" class="sticky-cta-button" title="Continue as Employer">
+            <i class="fas fa-building"></i>
+        </a>
+    </div>
+
+    <script src="index.js"></script>
+</body>
 </html>

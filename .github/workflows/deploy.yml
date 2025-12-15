@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - release/uat
+  workflow_dispatch: {}
 
 jobs:
   build-deploy:
@@ -11,24 +12,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Install dependencies
-        run: npm ci
-        working-directory: ./getjjobs-landing
-
-      - name: Build site
-        run: npm run build
-        working-directory: ./getjjobs-landing
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.GH_PAT }}
-          publish_dir: ./getjjobs-landing/dist
+          publish_dir: ./getjjobs-landing
           publish_branch: gh-pages
           # nuke and pave each deploy
           force_orphan: true
