@@ -4,6 +4,7 @@ name: Deploy static content to GitHub Pages
 
 on:
   push:
+<<<<<<< HEAD
     branches: ['release/uat'] # change to main later for prod
   workflow_dispatch:
 
@@ -15,6 +16,11 @@ permissions:
 concurrency:
   group: 'pages'
   cancel-in-progress: true
+=======
+    branches:
+      - release/uat
+  workflow_dispatch: {}
+>>>>>>> main
 
 jobs:
   deploy:
@@ -29,6 +35,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+<<<<<<< HEAD
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
@@ -53,3 +60,13 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+=======
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.GH_PAT }}
+          publish_dir: ./getjjobs-landing
+          publish_branch: gh-pages
+          # nuke and pave each deploy
+          force_orphan: true
+>>>>>>> main

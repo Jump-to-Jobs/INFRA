@@ -1,0 +1,43 @@
+---
+'':
+  - ttl: 3600
+    type: A
+    values:
+      - 75.2.60.5
+      - 99.83.190.102
+  - ttl: 3600
+    type: MX
+    values:
+      - exchange: mx1.forwardemail.net.
+        preference: 10
+      - exchange: mx2.forwardemail.net.
+        preference: 10
+  - ttl: 3600
+    type: TXT
+    values:
+      - forward-email-site-verification=Zh8I4ySdmv
+      - "v=spf1 a include:spf.forwardemail.net include:_spf.google.com -all"
+'app':
+  - ttl: 3600
+    type: CNAME
+    value: cd00d1410879ea24.vercel-dns-017.com.
+'dev':
+  - ttl: 3600
+    type: CNAME
+    value: cname.vercel-dns.com.
+'fe-bounces':
+  - ttl: 3600
+    type: CNAME
+    value: forwardemail.net.
+'fe-5727d14152._domainkey':
+  - ttl: 3600
+    type: TXT
+    value: "v=DKIM1\\; k=rsa\\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDM0eTCxHLCdpJXpanUhR8fG/QD+xGjOkOBjA9ytDVc7CB6TGYZv0+x/vn6uCs/ODyOvaScG3J/dN+76m+hyCO1WtjFPy9tiuCFaKhVCkSopqSUWuHa/E5kStQ/Cd5a7uWUkwl60P5yUNkuujUYIlq+cYJTa0u8LARmapBprv6//QIDAQAB\\;"
+'_dmarc':
+  - ttl: 3600
+    type: TXT
+    value: "v=DMARC1\\; p=reject\\; pct=100\\; rua=mailto:dmarc-6832438f6dff8fa7b72b9251@forwardemail.net\\;"
+'www':
+  - ttl: 3600
+    type: CNAME
+    value: testjjobs.netlify.app.

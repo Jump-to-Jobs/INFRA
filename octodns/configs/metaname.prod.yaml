@@ -1,0 +1,17 @@
+---
+providers:
+  zones:
+    class: octodns.provider.yaml.YamlProvider
+    directory: zones
+    enforce_order: false
+
+  metaname-prod:
+    class: octodns_metaname.MetanameProvider
+    base_url: https://metaname.net/api/1.1
+
+zones:
+  getjjobs.nz.:
+    sources:
+      - zones
+    targets:
+      - metaname-prod
