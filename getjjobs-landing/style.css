@@ -175,13 +175,13 @@ body {
 }
 
 /* Animations */
-.animate-on-scroll {
+.js .animate-on-scroll {
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.8s ease;
 }
 
-.animate-on-scroll.visible {
+.js .animate-on-scroll.visible {
     opacity: 1;
     transform: translateY(0);
 }
