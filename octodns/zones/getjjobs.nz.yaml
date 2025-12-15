@@ -49,4 +49,4 @@
 'www':
   - ttl: 3600
     type: CNAME
-    value: getjjobs.nz.
+    value: jump-to-jobs.github.io.
