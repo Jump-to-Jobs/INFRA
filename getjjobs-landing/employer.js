@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Function to display messages (replaces alert)
     function showMessageBox(message, isError = false) {
         const messageBox = document.getElementById('emp-messageBox');
+        if (!messageBox) return;
         messageBox.textContent = message;
         messageBox.classList.remove('emp-error');
         if (isError) {
