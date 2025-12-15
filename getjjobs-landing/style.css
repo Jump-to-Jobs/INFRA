@@ -1328,6 +1328,27 @@ body {
     align-items: flex-start;
 }
 
+.emp-contact-content--single {
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.emp-contact-content--single .emp-contact-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.emp-contact-content--single .emp-contact-item {
+    justify-content: center;
+    display: inline-flex;
+}
+
+.emp-contact-content--single .emp-social-links {
+    justify-content: center;
+}
+
 .emp-contact-form {
     background: var(--card-bg);
     padding: 3rem;
